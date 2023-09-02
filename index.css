@@ -1,0 +1,168 @@
+/*
++=============+
+     Font
++=============+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Karla:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/*
++=============+
+   Variables
++=============+
+*/
+
+:root {
+    --lightgreen: #0db97f; 
+    --lightblue: #263548;
+    --darkblue: #1e2a38; 
+    --font1: 'Karla', sans-serif;
+    --font2: 'Inter', sans-serif;
+}
+
+/*
++=============+
+ Geral Configs
++=============+
+*/
+
+body {
+ 
+}
+
+/*
++=============+
+    Classes
++=============+
+*/
+
+.general {
+    border: whitesmoke 5px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    padding: 70px 10px 10px 50px;
+    background-color: var(--darkblue); 
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 10px #000);
+}
+
+.general h3 {
+    font-family: var(--font2);
+    color: white;
+}
+
+.title {
+    margin-bottom: 100px;
+}
+.title h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 35pt;
+    font-weight: 800;
+    line-height: 15px
+}
+
+.title h3 {
+    font-family: var(--font2);
+    font-weight: 100;
+    color: #dddeea;
+}
+
+.plenght {
+    font-family: var(--font2);
+    font-weight: 100;
+    color: #dddeea;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;    
+    gap: 10px;
+}
+
+.container1 button {
+   border: none;
+   border-radius: 5px;
+   background-color: var(--lightgreen);
+   padding: 10px;
+   font-family: var(--font2);
+   color: white;
+}
+
+.increaseDecrease {
+    display: flex;
+    flex-direction: row; 
+    gap: 5px;   
+}
+
+.increaseDecrease input {
+    width: 35px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+.increaseDecrease button { 
+    font-weight: 800;
+    width: 40px;
+}
+.line {
+    color: white;
+    opacity: 20%;
+}
+.checks {
+    font-family: var(--font2);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    margin-bottom: 20px;
+}
+
+.passCountainer {
+    display: flex;
+    gap: 25px;
+    text-align: center;
+}
+
+.passWord {
+    all: unset;
+    background-color: var(--lightblue);
+    color: var(--lightgreen);
+    padding: 15px;
+    border-radius: 5px;
+    width: 235px;
+    
+}
+
+.message {
+    visibility: hidden;
+    position: absolute;
+    bottom: -40px;
+    padding: 15px 50px 15px 50px;
+    border-radius: 5px;
+  
+ 
+}
+
+.animation {
+    background-color: var(--lightgreen);
+    visibility: visible;
+    animation: myAnimation 6s ease;
+}
+
+@keyframes myAnimation {
+ 0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(300px);
+  }
+}
+

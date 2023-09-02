@@ -1,0 +1,45 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="general">  
+            
+            <div class="title">
+                <h1 style="color: white">Generate a</h1>
+                <h1 style="color: #46de85">Random password</h1>
+                <h3>Never use an insecure password again</h3>
+               
+            </div>
+            
+            <h3>What is allowed in your password?</h3>
+            <div class="checks">
+                <label for="check1">numbers?</label>    
+                <input type="checkbox" id="check1"/>  </br>
+                <label for="check2">symbols?</label>
+                <input type="checkbox" id="check2"/> </br>
+                <label for="check3">uppercased letters?</label>
+                <input type="checkbox" id="check3"/>   </br>  
+            </div>
+            <p class="plenght">Password length</p>
+            <div class="container1">
+                
+                <div class="increaseDecrease">
+                    <button onclick="decreasePass()">-</button>
+                    <input id="passWordLenght" value="10"/>
+                    <button onclick="increasePass()">+</button>
+                </div>
+                <button onclick="generatePassWord()">Generate passwords</button>
+            </div>
+            
+            <p class="line">______________________________________________________________</p>
+            
+            <div class="passCountainer">
+                <input type="text"  class="passWord" id="P1" onclick="copyOnClick('P1')"/>
+                <input type="text"  class="passWord" id="P2" onclick="copyOnClick('P2')"/>
+                <p class="message" id="T">text copied!</p>
+            </div>
+        </div> 
+    </body>
+    <script src="index.js"></script>
+</html>
